@@ -1,0 +1,116 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             PATTERN,CODE,READONLY
+    2 00000000         PATTERN_Display
+                               PROC
+    3 00000000                 EXPORT           PATTERN_Display
+    4 00000000                 PRESERVE8
+    5 00000000         
+    6 00000000 B530            PUSH             {R4, R5, LR}
+    7 00000002 F04F 0400       MOV              R4, #0      ; local variable: n
+                                                            
+    8 00000006 4605            MOV              R5, R0      ; entering paramete
+                                                            r stored: pattern
+    9 00000008         
+   10 00000008                 IMPORT           DRAW_Init   ; Initialization
+   11 00000008 F7FF FFFE       BL               DRAW_Init
+   12 0000000C                 IMPORT           DRAW_Disp1LED
+   13 0000000C         
+   14 0000000C 4620    REP     MOV              R0, R4
+   15 0000000E 4629            MOV              R1, R5
+   16 00000010 F001 0101       AND              R1, #1
+   17 00000014 F7FF FFFE       BL               DRAW_Disp1LED
+   18 00000018 EA4F 0555       LSR              R5, R5, #1
+   19 0000001C F104 0401       ADD              R4, #1
+   20 00000020         
+   21 00000020 2C0A            CMP              R4, #10
+   22 00000022 D1F3    FIN     BNE              REP
+   23 00000024         
+   24 00000024         
+   25 00000024 E8BD 4030       POP              {R4, R5, LR}
+   26 00000028         
+   27 00000028 4770            BX               LR          ; Return
+   28 0000002A         
+   29 0000002A                 ENDP
+   30 0000002A 00 00           ALIGN
+   31 0000002C                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.sp --apcs=
+interwork --depend=.\objects\pattern.d -o.\objects\pattern.o -I.\RTE\Device\STM
+32F746NGHx -I.\RTE\_Target_1 -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\ARM\CM
+SIS\5.7.0\CMSIS\Core\Include -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\M
+DK-Middleware\7.12.0\Board -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM
+32F7xx_DFP\2.14.0\Drivers\BSP\STM32746G-Discovery -IC:\Users\M4thus4n\AppData\L
+ocal\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F7xx\Incl
+ude -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drive
+rs\STM32F7xx_HAL_Driver\Inc -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\ST
+M32F7xx_DFP\2.14.0\MDK\Boards\ST\STM32F746G_Discovery\Common --predefine="__EVA
+L SETA 1" --predefine="__UVISION_VERSION SETA 533" --predefine="_RTE_ SETA 1" -
+-predefine="STM32F746xx SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\pa
+ttern.lst PATTERN.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FIN 00000022
+
+Symbol: FIN
+   Definitions
+      At line 22 in file PATTERN.s
+   Uses
+      None
+Comment: FIN unused
+PATTERN 00000000
+
+Symbol: PATTERN
+   Definitions
+      At line 1 in file PATTERN.s
+   Uses
+      None
+Comment: PATTERN unused
+PATTERN_Display 00000000
+
+Symbol: PATTERN_Display
+   Definitions
+      At line 2 in file PATTERN.s
+   Uses
+      At line 3 in file PATTERN.s
+Comment: PATTERN_Display used once
+REP 0000000C
+
+Symbol: REP
+   Definitions
+      At line 14 in file PATTERN.s
+   Uses
+      At line 22 in file PATTERN.s
+Comment: REP used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+DRAW_Disp1LED 00000000
+
+Symbol: DRAW_Disp1LED
+   Definitions
+      At line 12 in file PATTERN.s
+   Uses
+      At line 17 in file PATTERN.s
+Comment: DRAW_Disp1LED used once
+DRAW_Init 00000000
+
+Symbol: DRAW_Init
+   Definitions
+      At line 10 in file PATTERN.s
+   Uses
+      At line 11 in file PATTERN.s
+Comment: DRAW_Init used once
+2 symbols
+341 symbols in table

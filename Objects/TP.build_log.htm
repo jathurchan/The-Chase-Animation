@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jathurchan Selvakumar, ENSEA, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\M4thus4n\Documents\Jathurchan\TPMICRO\TP.uvprojx
+Project File Date:  04/30/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+assembling PATTERN.s...
+compiling DRAW.c...
+test.h(2): warning:  #1295-D: Deprecated declaration TEST04 - give arg types
+  void TEST04();
+PATTERN.h(2): warning:  #1-D: last line of file ends without a newline
+  void PATTERN_WaitN(int N);
+DRAW.c: 2 warnings, 0 errors
+compiling main.c...
+test.h(2): warning:  #1295-D: Deprecated declaration TEST04 - give arg types
+  void TEST04();
+PATTERN.h(2): warning:  #1-D: last line of file ends without a newline
+  void PATTERN_WaitN(int N);
+main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=9444 RO-data=520 RW-data=28 ZI-data=263212  
+".\Objects\TP.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.12.0.pack
+                Keil.MDK-Middleware.7.12.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: Graphic LCD Version: 1.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.14.0.pack
+                Keil.STM32F7xx_DFP.2.14.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: SDRAM Version: 1.1.1
+   * Component: Graphic LCD Version: 1.1.1
+   * Component: Classic Version: 1.2.8
+   * Component: Common Version: 1.2.8
+   * Component: Cortex Version: 1.2.8
+   * Component: DAC Version: 1.2.8
+   * Component: DMA Version: 1.2.8
+   * Component: EXTI Version: 1.2.8
+   * Component: Flash Version: 1.2.8
+   * Component: GPIO Version: 1.2.8
+   * Component: LTDC Version: 1.2.8
+   * Component: PWR Version: 1.2.8
+   * Component: RCC Version: 1.2.8
+   * Component: SDRAM Version: 1.2.8
+   * Component: SPI Version: 1.2.8
+   * Component: TIM Version: 1.2.8
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F746NGHx
+  .\RTE\_Target_1
+  C:\Users\M4thus4n\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.12.0\Board
+  C:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drivers\BSP\STM32746G-Discovery
+  C:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+  C:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drivers\STM32F7xx_HAL_Driver\Inc
+  C:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\MDK\Boards\ST\STM32F746G_Discovery\Common
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:Graphic LCD:1.0.0 (API)
+      Include file:  Board\Board_GLCD.h
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.STM32F746G-Discovery::Board Support:Drivers:SDRAM:1.1.1
+      Include file:  Drivers\BSP\STM32746G-Discovery\stm32746g_discovery_sdram.h
+      Source file:   Drivers\BSP\STM32746G-Discovery\stm32746g_discovery_sdram.c
+
+   * Component: Keil.STM32F746G-Discovery::Board Support:Graphic LCD:1.1.1
+      Include file:  MDK\Boards\ST\STM32F746G_Discovery\Common\GLCD_Config.h
+      Source file:   MDK\Boards\ST\STM32F746G_Discovery\Common\GLCD_Fonts.c
+      Source file:   MDK\Boards\ST\STM32F746G_Discovery\Common\GLCD_746G_Discovery.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.2.8
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Include file:  MDK\Templates\Inc\stm32f7xx_hal_conf.h
+      Source file:   MDK\Templates\Src\stm32f7xx_it.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Include file:  MDK\Templates\Inc\stm32f7xx_it.h
+      Source file:   MDK\Templates\Src\main.c
+      Source file:   MDK\Templates\Src\stm32f7xx_hal_msp.c
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  MDK\Templates\Inc\main.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.2.8
+      Include file:  Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal.h
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DAC:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac_ex.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:EXTI:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_exti.c
+
+   * Component: Keil::Device:STM32Cube HAL:Flash:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:LTDC:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc_ex.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:SDRAM:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_fmc.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sdram.c
+
+   * Component: Keil::Device:STM32Cube HAL:SPI:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.2.8
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.c
+      Source file:   Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.c
+
+   * Component: Keil::Device:Startup:1.2.5
+      Source file:   MDK\Device\Source\ARM\STM32F74x_75x_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F74x_75x_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\arm\startup_stm32f746xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\system_stm32f7xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

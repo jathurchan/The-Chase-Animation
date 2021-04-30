@@ -10,6 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -381,6 +382,33 @@
       <Groups>
         <Group>
           <GroupName>Source Group 1</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>test.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\test.s</FilePath>
+            </File>
+            <File>
+              <FileName>DRAW.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\DRAW.c</FilePath>
+            </File>
+            <File>
+              <FileName>LAB_746_DISC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LAB_746_DISC.c</FilePath>
+            </File>
+            <File>
+              <FileName>PATTERN.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\PATTERN.s</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::Board Support</GroupName>
@@ -447,7 +475,25 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DAC" Cvendor="Keil" Cversion="1.2.8" condition="STM32F7 HAL DMA">
+        <package name="STM32F7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.14.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA" Cvendor="Keil" Cversion="1.2.8" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.14.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="EXTI" Cvendor="Keil" Cversion="1.2.8" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.14.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Flash" Cvendor="Keil" Cversion="1.2.8" condition="STM32F7 HAL">
         <package name="STM32F7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.14.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
@@ -484,6 +530,12 @@
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="SPI" Cvendor="Keil" Cversion="1.2.8" condition="STM32F7 HAL DMA">
+        <package name="STM32F7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.14.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="TIM" Cvendor="Keil" Cversion="1.2.8" condition="STM32F7 HAL DMA">
         <package name="STM32F7xx_DFP" schemaVersion="1.7.1" url="http://www.keil.com/pack/" vendor="Keil" version="2.14.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>

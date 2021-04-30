@@ -1,0 +1,97 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             TEST,CODE,READONLY
+    2 00000000         TEST04  PROC
+    3 00000000                 EXPORT           TEST04      ; to export the lab
+                                                            el
+    4 00000000                 PRESERVE8
+    5 00000000         
+    6 00000000                 IMPORT           DRAW_Init
+    7 00000000 F7FF FFFE       BL               DRAW_Init
+    8 00000004         
+    9 00000004                 IMPORT           DRAW_Disp1LED
+   10 00000004 F04F 0000       mov              R0, #0
+   11 00000008 F04F 0101       mov              R1, #1
+   12 0000000C F7FF FFFE       BL               DRAW_Disp1LED
+   13 00000010 F04F 0009       mov              R0, #9
+   14 00000014 F04F 0100       mov              R1, #0
+   15 00000018 F7FF FFFE       BL               DRAW_Disp1LED
+   16 0000001C         
+   17 0000001C F04F 0001       mov              R0, #1
+   18 00000020 E7FE    TheEND  B                TheEND
+   19 00000022                 ENDP
+   20 00000022 00 00           ALIGN
+   21 00000024                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.sp --apcs=
+interwork --depend=.\objects\test.d -o.\objects\test.o -I.\RTE\Device\STM32F746
+NGHx -I.\RTE\_Target_1 -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\ARM\CMSIS\5.
+7.0\CMSIS\Core\Include -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\MDK-Mid
+dleware\7.12.0\Board -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx
+_DFP\2.14.0\Drivers\BSP\STM32746G-Discovery -IC:\Users\M4thus4n\AppData\Local\A
+rm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include -I
+C:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.14.0\Drivers\STM
+32F7xx_HAL_Driver\Inc -IC:\Users\M4thus4n\AppData\Local\Arm\Packs\Keil\STM32F7x
+x_DFP\2.14.0\MDK\Boards\ST\STM32F746G_Discovery\Common --predefine="__EVAL SETA
+ 1" --predefine="__UVISION_VERSION SETA 533" --predefine="_RTE_ SETA 1" --prede
+fine="STM32F746xx SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\test.lst
+ test.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+TEST 00000000
+
+Symbol: TEST
+   Definitions
+      At line 1 in file test.s
+   Uses
+      None
+Comment: TEST unused
+TEST04 00000000
+
+Symbol: TEST04
+   Definitions
+      At line 2 in file test.s
+   Uses
+      At line 3 in file test.s
+Comment: TEST04 used once
+TheEND 00000020
+
+Symbol: TheEND
+   Definitions
+      At line 18 in file test.s
+   Uses
+      At line 18 in file test.s
+Comment: TheEND used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+DRAW_Disp1LED 00000000
+
+Symbol: DRAW_Disp1LED
+   Definitions
+      At line 9 in file test.s
+   Uses
+      At line 12 in file test.s
+      At line 15 in file test.s
+
+DRAW_Init 00000000
+
+Symbol: DRAW_Init
+   Definitions
+      At line 6 in file test.s
+   Uses
+      At line 7 in file test.s
+Comment: DRAW_Init used once
+2 symbols
+340 symbols in table
